@@ -68,3 +68,7 @@ http://<AZURE_VM_PUBLIC_IP>:8080
 
 Output:
 Hello CICD World!
+
+*“This project demonstrates an end‑to‑end CI/CD workflow. I used GitHub Actions to automate the pipeline. On every push to the main branch, the pipeline checks out the code, runs unit tests using pytest, builds a Docker image using a Dockerfile, and pushes the image to Docker Hub securely using GitHub Secrets.*
+>
+> *On the deployment side, I provisioned an Azure Linux VM, installed Docker, pulled the image from Docker Hub, and ran it as a container with port mapping. I configured Azure NSG rules to allow external traffic, which allowed me to access the Flask application through a public IP. The application returns a simple response — ‘Hello CICD World!’ — confirming successful deployment.”*
